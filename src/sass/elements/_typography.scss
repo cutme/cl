@@ -1,0 +1,41 @@
+body {
+    @include antialias;
+	line-height: 1;
+	text-rendering: optimizeSpeed;
+	font: {
+		family: $text;
+		size: #{$base-font-size}px;
+		weight: $regular;
+	}
+	color: $c-primary;
+}
+
+a {
+    @extend %anim;
+	color: inherit;
+	cursor: pointer;
+	text-decoration: none;
+	
+	&:hover,
+    &:active,
+    &:focus {
+        outline: none;
+    }
+}
+
+
+
+cite {
+    display: block;
+    font-style: italic;
+}
+
+strong {
+    font-weight: $bold;
+}
+
+
+::selection {
+	background-color: $c-primary;
+	color: white;
+}

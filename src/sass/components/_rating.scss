@@ -1,0 +1,43 @@
+.c-rating {
+
+    &__stars {
+        @extend %flex;
+        @extend %flex-xy;
+        width: 100%;
+
+        [class^="icon-"] {
+            @extend %flex;
+            @extend %flex-xy;
+            width: 40px; height: 40px;
+            background-color: white;
+            border-radius: 50%;
+            margin: 0 10px;
+            border: 1px solid $c-gray2;
+            font-size: rem(22);
+            color: $c-gray3;
+            
+            &.is-active {
+                background-color: $c-yellow;
+                border-color: $c-yellow;
+                color: white;
+            }
+        }
+        
+        &:last-of-type {
+            [class^="icon-"] {
+                margin-right: 0;
+            }
+        }
+    }
+    
+    /*
+.o-header {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+*/
+    
+    .o-btn {
+        width: 160px;
+    }
+}

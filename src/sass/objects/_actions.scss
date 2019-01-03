@@ -1,0 +1,38 @@
+.o-actions {
+    @extend %flex;
+    justify-content: flex-end;
+
+    [class^="icon-"] {
+        @extend %anim;
+        @extend %flex;
+        @extend %flex-xy;
+        width: 50px; height: 50px;
+        background-color: white;
+        margin: 0 4px;
+        border: 1px solid $c-gray2;
+        border-radius: 50%;
+        font-size: rem(20);
+        cursor: pointer;
+        color: $c-gray3;
+        
+        @media screen and ( max-width: $smartphone_portrait + px ) {
+            width: 30px; height: 30px;
+            margin: 0 2px;
+            font-size: rem(14);
+        }
+        
+        &:hover {
+           border-color: $c-gray; 
+        }   
+     
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+    
+    .o-btn {
+        @media screen and ( min-width: $smartphone_portrait + 1px ) {
+            margin-left: 20px;
+        }
+    }
+}

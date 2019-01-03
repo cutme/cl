@@ -1,0 +1,49 @@
+.c-article {
+    .o-text {
+        a {
+            @extend %ulink;
+            font-weight: $regular;
+            color: $c-blue;
+            
+            &:after, &:before {
+                background-color: $c-blue;
+            }
+        }
+
+        blockquote {
+            p {
+                font: {
+                    size: rem(15);
+                    weight: $regular;
+                }
+                color: $c-violet;
+            }
+        }
+        
+        h1 {
+            margin-bottom: 1.1em;
+            font: {
+                size: rem(35);
+                weight: $light;
+            }
+        }
+        
+        h5 {
+            margin-bottom: 1.5em;
+            text-transform: uppercase;
+            line-height: 1.2em;
+            font: {
+                size: rem(18);
+                weight: $regular;
+            }
+        }
+        
+        p {
+            margin-bottom: 1.5em;
+            
+            & ~ h5 {
+                margin-top: 2.5em;
+            }
+        }
+    }
+}

@@ -1,0 +1,61 @@
+.o-upload {  
+    @extend %rel;
+    @extend %flex;
+    @extend %flex-y;
+    height: 50px;
+    border: 1px solid $c-gray2;   
+    border-radius: 4px;
+    padding-left: 10px; 
+    overflow: hidden;
+
+    &.file-added {
+    
+        .o-btn--small {
+            display: none;
+        }
+    
+        .o-upload__info {
+            
+        }
+    }
+    
+    &__info {
+        padding-left: 15px;
+    }
+    
+    input[type='file'] {
+        @extend %abs;
+        opacity: 0;
+        left: 0; top: 0;
+        z-index: 10;
+        display: block;
+        cursor: inherit;        
+        font-size: 999px;
+        min-height: 100%;
+        min-width: 100%;
+        cursor: pointer;
+    }
+    
+    .o-btn {
+        
+    }
+}
+
+
+.c-importcontact {
+    width: 500px;
+    
+    .o-btn {
+        &--violet {
+            width: 145px;
+        }
+    }
+    
+    .o-upload {
+        margin-bottom: 10px;
+    }
+
+    .o-header--sixth {
+        margin-bottom: 4px;
+    }
+}

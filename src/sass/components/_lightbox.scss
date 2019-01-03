@@ -1,0 +1,52 @@
+.c-lightbox {
+    @extend %rel;
+    max-width: 1080px;
+    min-width: 480px;
+    background-color: white;
+    padding: 60px 50px;
+    overflow: auto;
+    
+    @media screen and ( max-width: $smartphone_portrait + px ) {
+        min-width: 0;
+    }
+    
+    @media screen and ( max-width: $tablet_portrait + px ) {
+        padding: 40px;
+    }
+    
+    @media screen and ( max-width: $smartphone + px ) {
+        padding: 40px 20px;
+    }
+    
+    &__title {
+        margin-bottom: 1.5em;
+        text-align: center;
+    }
+    
+    &__close {
+        @extend %abs;
+        display: block;
+        right: 20px; top: 30px;
+        width: 34px; height: 34px;
+        cursor: pointer;
+        
+        &:after,
+        &:before {
+            @extend %abs;
+            @extend %abs-after;
+            width: 34px; height: 1px;
+            background-color: black;
+        }
+        
+        &:after {
+            left: 0; top: 16px;
+            transform: rotate(45deg);
+        }
+        
+        &:before {
+            left: 0; top: 16px;
+            transform: rotate(-45deg);
+        }
+    }
+}
+

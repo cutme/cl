@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<%= require('html-loader?minimize=false!./includes/head.html') %>
+
+    <div class="c-top c-top--float js-top">
+        <a href="index.html" class="c-logo">
+            <img src=<%= require("./img/logo-cl--black.svg") %> width="191" height="54" alt="Central Listing">
+        </a>
+        
+        <%= require('html-loader?minimize=false!./includes/nav-primary.html') %>
+        <div class="o-hamburger o-hamburger--subsite js-hamburger"></div>
+        <%= require('html-loader?minimize=false!./includes/top-buttons.html') %>
+    </div>
+
+    <div class="o-container o-container--float">
+
+        <div class="o-wrap o-wrap--content">
+            <div class="c-searchresults">
+                <div class="o-cols">
+                    <div class="c-searchresults__profile">
+                        <figure class="o-icon">
+                            <div class="o-icon__img">
+                                <img src=<%= require("./img/assets/agent-2.jpg") %> width="330" height="330" alt="">
+                            </div>
+                            
+                            <figcaption class="o-text">
+                                <h5 class="o-header--fifth">Gabriel Lawrence</h5>
+                                
+                                <p>Senior Property Consultant</p>
+                            </figcaption>
+                        </figure>
+                        
+                        <dl class="c-share">
+                            <dt>Share with</dt>
+                            
+                            <dd>
+                                <a href="#" class="icon-facebook" rel="noopener"></a>
+                                <a href="#" class="icon-twitter" rel="noopener"></a>
+                                <a href="#" class="icon-rss" rel="noopener"></a>
+                            </dd>
+                        </dl>
+                    </div>
+                    
+                    <div class="c-searchresults__description">
+                        <div class="c-article">
+                            <div class="o-text">
+                                <p>
+    Lorem ipsum dolor, consectetur adipiscing elit. Nulla sollicitudin mollis ligula, non bibendum. 
+    	   Donec elementum lorem nibh, sed facilisis nisl feugiat pharetra. Nullam sit amet erat frin erat. 
+    	   Vestibulum eleifend pretium nunc ut pellentesque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porta sem ac metus dignissim sagittis. Phasellus fermentum magna non turpis  mattis purus interdum.
+                                </p>
+                                
+                                <p>
+    Fusce commodo dui eros. Donec sed aliquam risus. Proin ac quam a massa ultricies mattis quis id quam. Pellentesque cursus nisi ut tempor tincidunt. Aliquam erat volutpat. Integer ultricies vehicula auctor. Vivamus ornare, felis id efficitur condimentum, enim mauris semper nibh, sed porta ligula nisl ac enim. Suspendisse ornare elementum accumsan. Donec elementum non urna et consequat. Quisque et massa dictum, convallis quam efficitur, vestibulum felis. Aliquam eget velit mauris. Proin aliquet porttitor justo ac elementum.
+                                </p>
+                                
+                                <p>
+    Nam at placerat nisi. Curabitur accumsan leo neque, eu porttitor velit interdum eget. Vestibulum pellentesque purus sit amet libero vulputate, sed dapibus mi rutrum. Vestibulum nibh metus, fermentum non nulla sit amet, tempor sodales dui. Quisque bibendum dui eu ex vestibulum, at dignissim ex rutrum. Aenean mattis, libero quis rhoncus maximus, erat dui placerat felis, a sodales nisl sapien ut erat. Etiam tortor lorem, interdum vel erat ac, ultricies malesuada ipsum.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+  
+            </div>
+        </div>        
+    </div>
+
+
+    <%= require('html-loader?minimize=false!./includes/footer.html') %>
+
+
+</body>
+</html>

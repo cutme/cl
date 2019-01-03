@@ -1,0 +1,13 @@
+.c-carousel {
+    transition: all 1s ease-out;
+    margin: -20px 0 60px 0;
+    opacity: 0;
+    
+    img {
+        border-radius: 6px;
+    }
+    
+    &.is-visible {
+        opacity: 1;        
+    }
+}

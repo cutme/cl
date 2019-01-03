@@ -1,0 +1,27 @@
+@keyframes pulse {
+    0%   {
+        background: white;
+    }
+    50% {
+        background: #efefef;
+    }
+    
+    100% {
+        background: white;
+    }
+}
+
+
+.c-map {
+    @extend %rel;
+    height: 50%;
+    
+    @media screen and ( max-width: $tablet_portrait + px ) {
+        height: 300px;
+    }
+    
+    
+    &.is-loading {
+        animation: pulse 1s infinite;
+    }
+}

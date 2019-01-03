@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<%= require('html-loader?minimize=false!./includes/head.html') %>
+
+    <div class="c-top c-top--float js-top">
+        <a href="index.html" class="c-logo">
+            <img src=<%= require("./img/logo-cl--black.svg") %> width="191" height="54" alt="Central Listing">
+        </a>
+        
+        <%= require('html-loader?minimize=false!./includes/nav-primary.html') %>
+        <div class="o-hamburger o-hamburger--subsite js-hamburger"></div>
+        <%= require('html-loader?minimize=false!./includes/top-buttons.html') %>
+    </div>
+
+
+    <div class="o-container o-container--float">
+    
+        <div class="o-wrap o-wrap--content">
+            <div class="c-page">
+                <div class="c-article">
+                    <article class="o-text">
+                        <h1>Central Listing is a marketing, communication and administration software tool for UK property professionals.</h1>
+                        
+                        <section class="two-cols">
+                            <p>
+    Proin mollis congue pharetra. Nulla vitae nunc luctus, bibendum neque vitae, lobortis lacus. Vestibulum condimentum nibh lacus, in sollicitudin augue aliquet eget. Aenean ultricies at odio ac tincidunt. Donec at luctus lorem, quis congue sapien. Nullam commodo consequat nunc in faucibus. Nulla vehicula vulputate ipsum eget finibus. Suspendisse potenti. Quisque ornare turpis lorem, ac pulvinar neque varius sed. Ut ut nulla non diam porta volutpat. Aliquam vitae pharetra ante, vel suscipit lacus. Nam blandit ac augue sit amet ultrices. Aliquam aliquet sem quis mauris hendrerit, auctor commodo velit tristique.
+                            </p>
+                        
+                            <p>
+    Sed eu massa hendrerit, molestie nibh rhoncus, consequat diam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce imperdiet sit amet neque non venenatis. Praesent tempor mollis elit non accumsan. Cras finibus id orci ac vulputate. Duis luctus erat diam, bibendum euismod sapien dignissim sit amet. Nunc lacinia arcu at tempor accumsan. Ut tincidunt laoreet nulla, vitae hendrerit erat posuere nec. In congue porta est, nec ornare tellus aliquet quis. Curabitur eu ultrices mauris, quis suscipit dui. Mauris gravida accumsan tempor.
+                            </p>
+                        </section>
+                    </article>
+                </div>
+            
+            
+                <div class="o-grid o-grid--three">
+                    <div class="o-grid__item">
+                        <figure class="o-icon">
+                            <img src=<%= require("./img/icons/map.png") %> width="65" height="57" alt="">
+                            
+                            <figcaption class="o-text">
+                                <h5 class="o-header--fifth">Search properties</h5>
+                                
+                                <a href="#" class="o-btn o-btn--up o-btn--violet">Create</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    
+                    <div class="o-grid__item">
+                        <figure class="o-icon">
+                            <img src=<%= require("./img/icons/agents.png") %> width="53" height="61" alt="">
+                            
+                            <figcaption class="o-text">
+                                <h5 class="o-header--fifth">Find agents</h5>
+                                
+                                <a href="#" class="o-btn o-btn--up o-btn--violet">Create</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    
+                    <div class="o-grid__item">
+                        <figure class="o-icon">
+                            <img src=<%= require("./img/icons/stats.png") %> width="63" height="59" alt="">
+                            
+                            <figcaption class="o-text">
+                                <h5 class="o-header--fifth">Get expert advice / ask an expert</h5>
+                                
+                                <a href="#" class="o-btn o-btn--up o-btn--violet">Create</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <%= require('html-loader?minimize=false!./includes/footer.html') %>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+.c-form {
+
+    .c-searchresults {
+        .o-header {
+            margin-bottom: 60px;
+        }
+    }
+
+    .o-wrap--form {
+        margin-bottom: 130px;
+        
+        > .o-header {
+            margin-bottom: 80px;
+        }
+    }
+    
+    .postcode {
+        @extend %rel;
+        flex: 0 0 600px;
+        
+        @media screen and ( max-width: $base2 + px ) {
+            flex: 0 0 grid(600, $base2 - 120);
+        }
+        
+        .o-btn {
+            @extend %abs;
+            bottom: 10px;
+            right: 20px;
+            
+            @media screen and ( max-width: $tablet_portrait + px ) {
+                bottom: 5px; right: 15px;
+            }
+        }
+    }
+    
+    .form-radio {
+        &--oval {
+            & + label {
+                
+                span {
+                    text-transform: none;
+                    font: {
+                        size: rem(14);
+                        weight: $light;
+                    }
+                }
+            }
+        }
+    }
+    
+    .form-group {    
+        &--radios {
+            div {
+                &:first-of-type {
+                    margin-right: 25px;
+                }
+            }
+        }
+    }
+    
+    &--brochure {
+    
+        textarea.form-field {
+            height: 260px;
+        }
+
+        .o-grid__item {
+            @extend %flex;
+            flex-direction: column;
+    
+            .o-icon {
+                margin-bottom: 40px;
+            }
+            
+            .o-btn {
+                align-self: center;
+            }
+        }
+    }
+
+    .o-grid {
+        &__item {
+
+            @media screen and ( max-width: 1100px ) {
+                width: 100%;
+            }
+        }
+        
+        
+    }
+}

@@ -1,0 +1,65 @@
+.o-overlay {
+    @include z-index(overlay);
+    @extend %flex;
+    @extend %flex-xy;
+    position: fixed;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+ 
+    background: {
+        image: url(../img/icons/fading-lines.svg);
+        repeat: no-repeat;
+        position: center;
+        color: rgba($c-primary, .6);
+    }
+    
+    /*
+&:after {
+        @extend %abs;
+        @extend %abs-after;
+        z-index: -1;
+        transition: opacity 100ms ease-out;
+        width: 100%; height: 100vh;
+        left: 0; top: 0; right: 0; bottom: 0;
+        background: {
+            image: url(../img/icons/fading-lines.svg);
+            repeat: no-repeat;
+            position: center;
+            color: rgba($c-primary, .6);
+        }
+        opacity: 0;
+    }
+*/
+
+    &__content {
+        @extend %anim;
+        transform: translate3d(0, 10px, 0);
+        padding: 60px 0;
+        opacity: 0;
+        
+        &.is-visible {
+            transform: translate3d(0, 0, 0);
+            opacity: 1;
+        }
+    }
+    
+   /*
+ &.is-visible {
+        &:after {
+            opacity: 1;
+        }
+    }
+*/
+    
+    &.to-baseline {
+        align-items: baseline;
+        
+        .o-overlay__content {
+            padding: 0;
+        }
+    }
+}
+
+

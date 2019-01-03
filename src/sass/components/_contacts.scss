@@ -1,0 +1,53 @@
+.c-contacts {
+    .o-grid {       
+
+        .o-icon {
+            border-bottom: 1px solid $c-gray2;
+            margin: 0 20px;
+            padding: 0 0 50px 0;
+
+            p {
+                margin-bottom: 5px;                
+            }
+            
+            .o-header--fifth {
+                margin-bottom: 5px;
+            }
+            
+            .email {
+                a {
+                    @extend %ulink;
+                    
+                    &:after, &:before {
+                        background-color: $c-gray;
+                    }
+                }
+            }
+            
+            .icon-picture {
+                display: block;
+                margin: 0 auto 25px auto;
+                font-size: rem(70);
+                color: $c-gray7;
+            }
+            
+            .position {
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    .o-tabs {
+        &__nav {
+            &--violet {
+                margin-bottom: 60px;
+            }
+        }
+        
+        .o-header {
+            
+        }
+    }
+}

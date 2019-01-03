@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 52 60" style="enable-background:new 0 0 52 60;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#E9EAEB;}
+	.st1{fill:#3A3A3A;}
+	.st2{fill:#FFFFFF;}
+	.st3{fill:#62D4D6;}
+</style>
+<g>
+	<g>
+		<circle class="st0" cx="26" cy="30" r="25"/>
+	</g>
+	<g>
+		<rect x="25" y="9" class="st1" width="2" height="42"/>
+	</g>
+	<g>
+		<rect x="5" y="29" transform="matrix(0.8661 -0.4999 0.4999 0.8661 -11.5155 17.0158)" class="st1" width="42" height="2"/>
+	</g>
+	<g>
+		<rect x="25" y="9" transform="matrix(0.5 -0.866 0.866 0.5 -12.9808 37.5167)" class="st1" width="2" height="42"/>
+	</g>
+	<g>
+		<ellipse transform="matrix(0.7645 -0.6447 0.6447 0.7645 -13.216 23.8267)" class="st2" cx="26" cy="30" rx="16" ry="16"/>
+		<path class="st1" d="M26,47c-9.4,0-17-7.6-17-17s7.6-17,17-17s17,7.6,17,17C43,39.4,35.4,47,26,47z M26,15c-8.3,0-15,6.7-15,15
+			s6.7,15,15,15s15-6.7,15-15C41,21.7,34.3,15,26,15z"/>
+	</g>
+	<g>
+		<rect x="11.5" y="10" transform="matrix(0.8682 -0.4961 0.4961 0.8682 -3.4153 9.1395)" class="st1" width="8.1" height="2"/>
+	</g>
+	<g>
+		<rect x="4" y="24" class="st1" width="2" height="12"/>
+	</g>
+	<g>
+		<rect x="14.5" y="45" transform="matrix(0.4961 -0.8682 0.8682 0.4961 -34.7341 38.147)" class="st1" width="2" height="8.1"/>
+	</g>
+	<g>
+		<rect x="32.5" y="48" transform="matrix(0.8682 -0.4961 0.4961 0.8682 -19.5017 24.5652)" class="st1" width="8.1" height="2"/>
+	</g>
+	<g>
+		<rect x="46" y="24" class="st1" width="2" height="12"/>
+	</g>
+	<g>
+		<rect x="35.5" y="7" transform="matrix(0.4961 -0.8682 0.8682 0.4961 8.8403 37.2333)" class="st1" width="2" height="8.1"/>
+	</g>
+	<g>
+		<path class="st3" d="M26,33c-3,0-9,0.9-9,4v2c2.4,2,5.6,3.3,9,3.3c3.4,0,6.6-1.2,9-3.3v-2C35,33.9,29,33,26,33z"/>
+	</g>
+	<g>
+		<path class="st3" d="M26,29c2.2,0,4-1.7,4-3.9v-2.3c0-2.1-1.8-3.9-4-3.9c-2.2,0-4,1.7-4,3.9v2.3C22,27.3,23.8,29,26,29z"/>
+		<path class="st1" d="M26,30c-2.8,0-5-2.2-5-4.9v-2.3c0-2.7,2.2-4.9,5-4.9s5,2.2,5,4.9v2.3C31,27.8,28.8,30,26,30z M26,20
+			c-1.7,0-3,1.3-3,2.9v2.3c0,1.6,1.3,2.9,3,2.9s3-1.3,3-2.9v-2.3C29,21.3,27.7,20,26,20z"/>
+	</g>
+	<g>
+		<path class="st1" d="M36,39h-2v-2c0-2-4.6-3-8-3s-8,1-8,3v2h-2v-2c0-4,6.5-5,10-5s10,1,10,5V39z"/>
+	</g>
+	<g>
+		<circle class="st2" cx="26" cy="5" r="4"/>
+		<path class="st1" d="M26,10c-2.8,0-5-2.2-5-5s2.2-5,5-5s5,2.2,5,5S28.8,10,26,10z M26,2c-1.7,0-3,1.3-3,3s1.3,3,3,3s3-1.3,3-3
+			S27.7,2,26,2z"/>
+	</g>
+	<g>
+		<circle class="st2" cx="47" cy="17" r="4"/>
+		<path class="st1" d="M47,22c-2.8,0-5-2.2-5-5s2.2-5,5-5s5,2.2,5,5S49.8,22,47,22z M47,14c-1.7,0-3,1.3-3,3s1.3,3,3,3s3-1.3,3-3
+			S48.7,14,47,14z"/>
+	</g>
+	<g>
+		<circle class="st2" cx="47" cy="43" r="4"/>
+		<path class="st1" d="M47,48c-2.8,0-5-2.2-5-5s2.2-5,5-5s5,2.2,5,5S49.8,48,47,48z M47,40c-1.7,0-3,1.3-3,3s1.3,3,3,3s3-1.3,3-3
+			S48.7,40,47,40z"/>
+	</g>
+	<g>
+		<circle class="st2" cx="5" cy="43" r="4"/>
+		<path class="st1" d="M5,48c-2.8,0-5-2.2-5-5s2.2-5,5-5s5,2.2,5,5S7.8,48,5,48z M5,40c-1.7,0-3,1.3-3,3s1.3,3,3,3s3-1.3,3-3
+			S6.7,40,5,40z"/>
+	</g>
+	<g>
+		<circle class="st2" cx="5" cy="17" r="4"/>
+		<path class="st1" d="M5,22c-2.8,0-5-2.2-5-5s2.2-5,5-5s5,2.2,5,5S7.8,22,5,22z M5,14c-1.7,0-3,1.3-3,3s1.3,3,3,3s3-1.3,3-3
+			S6.7,14,5,14z"/>
+	</g>
+	<g>
+		<path class="st2" d="M26,59c-2.2,0-4-1.8-4-4s1.8-4,4-4c2.2,0,4,1.8,4,4S28.2,59,26,59"/>
+		<path class="st1" d="M26,60c-2.8,0-5-2.2-5-5s2.2-5,5-5s5,2.2,5,5S28.8,60,26,60z M26,52c-1.7,0-3,1.3-3,3s1.3,3,3,3s3-1.3,3-3
+			S27.7,52,26,52z"/>
+	</g>
+</g>
+</svg>

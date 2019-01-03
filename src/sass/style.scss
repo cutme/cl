@@ -1,0 +1,74 @@
+@import 'settings/colors.scss';
+@import 'settings/global.scss';
+
+@import 'tools/anims';
+@import 'tools/clear';
+@import 'tools/functions';
+@import 'tools/mixins';
+@import 'tools/glide';
+
+@import 'generic/reset';
+@import 'generic/box-sizing';
+
+@import 'elements/extends';
+@import 'elements/fonts';
+@import 'elements/form';
+@import 'elements/media';
+@import 'elements/page';
+@import 'elements/typography';
+
+@import 'objects/actions';
+@import 'objects/btn';
+@import 'objects/cols';
+@import 'objects/container';
+@import 'objects/croppie';
+@import 'objects/custom-select';
+@import 'objects/filters';
+@import 'objects/grid';
+@import 'objects/icon';
+@import 'objects/header';
+@import 'objects/hamburger';
+@import 'objects/icons';
+@import 'objects/overlay';
+@import 'objects/profile';
+@import 'objects/section';
+@import 'objects/tabs';
+@import 'objects/text';
+@import 'objects/upload';
+@import 'objects/wrap';
+
+@import 'components/article';
+@import 'components/carousel';
+@import 'components/contact';
+@import 'components/contacts';
+@import 'components/createmessage';
+
+@import 'components/dashboard';
+@import 'components/footer';
+@import 'components/form';
+@import 'components/home';
+@import 'components/hero';
+@import 'components/lightbox';
+@import 'components/list';
+@import 'components/logo';
+@import 'components/map';
+@import 'components/messages';
+@import 'components/nav';
+@import 'components/page';
+@import 'components/pagination';
+@import 'components/post';
+
+@import 'components/rating';
+@import 'components/register';
+@import 'components/registerform';
+@import 'components/registertype';
+@import 'components/remove';
+@import 'components/searchform';
+@import 'components/searchresults';
+@import 'components/share';
+/* @import 'components/subjects'; */
+
+@import 'components/top';
+
+@import 'trumps/trumps';
+

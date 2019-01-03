@@ -1,0 +1,17 @@
+.c-registertype {
+    @extend %flex;
+    @extend %flex-wrap;
+    width: 960px;
+    padding-top: 20px;
+    
+    .o-icon {
+        @extend %flex;
+        @extend %flex-y;
+        @extend %flex-space-between;
+        @extend %flex-column;
+
+        .o-text {
+            width: 100%;
+        }
+    }
+}

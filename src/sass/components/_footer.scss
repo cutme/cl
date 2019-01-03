@@ -1,0 +1,59 @@
+.c-footer {
+    background-color: $c-black;
+    padding: 60px 0;
+    color: white;
+    
+    &__content {
+        @extend %flex;
+        @extend %flex-x;
+        
+        @media screen and ( max-width: $tablet_portrait + px ) {
+            flex-wrap: wrap;
+            text-align: center;
+        }
+    }
+    
+    &__col {
+        width: 380px;
+        
+        @media screen and ( max-width: $tablet_portrait + px ) {
+            width: 100%;
+            
+            &:not(:last-of-type) {
+                margin-bottom: 50px;
+            }
+        }
+    }
+    
+    &__copy {
+        opacity: .5;
+
+        p {
+            font-size: em(12);
+            
+            &:not(:last-of-type) {
+                margin-bottom: 2em;
+            }
+        }
+        
+        a {
+            @extend %ulink;
+            
+            &:before,
+            &:after {
+                background-color: white;
+            }
+        }
+    }
+    
+    .c-logo {
+        display: block;
+        opacity: .2;
+        
+        img {
+            @media screen and ( max-width: $tablet_portrait + px ) {
+                margin: 0 auto;
+            }
+        }
+    }
+}

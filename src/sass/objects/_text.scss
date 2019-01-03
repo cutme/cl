@@ -1,0 +1,20 @@
+.o-text {
+    //margin-bottom: 60px;
+    font-weight: $light;    
+
+    p {
+        line-height: 1.7em;
+    }
+
+    .o-header {
+        &--fourth {
+            margin-bottom: 1em;
+        } 
+        
+        &--third {
+            margin-bottom: 1em;
+        }  
+    }
+}
+
+

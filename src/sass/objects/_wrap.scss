@@ -1,0 +1,48 @@
+.o-wrap {
+    @extend %rel;
+    margin: 0 auto;
+    padding: 0 60px;
+    
+    @media screen and ( max-width: $tablet + px ) {
+        padding: 0 25px;
+    }
+    
+    
+    &--content {
+        width: $base2 + px;
+    }
+    
+    &--form {
+        width: 810px;
+        margin: 0 auto;
+        padding: 0;
+        
+        @media screen and ( max-width: $tablet + px ) {
+            width: 100%;
+        }
+    }
+    
+    &--grid,
+    &--grid2 {
+        width: $base2 + px;
+        padding: 0 40px;
+        
+        @media screen and ( max-width: $tablet + px ) {
+            padding: 0 25px;
+        }
+    }
+    
+    
+    
+    &--full {
+        width: $base + px;
+        
+        @media screen and ( max-width: $base + px ) {
+            width: 100%;
+        }
+    }
+    
+    @media screen and ( max-width: $base2 + px ) {
+        width: 100%;
+    }
+}

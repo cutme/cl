@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<%= require('html-loader?minimize=false!./includes/head.html') %>
+
+    <div class="c-top c-top--customer js-top">
+        <a href="index.html" class="c-logo">
+            <img src=<%= require("./img/logo-cl--black.svg") %> width="191" height="54" alt="Central Listing">
+        </a>
+
+        <%= require('html-loader?minimize=false!./includes/nav-customer.html') %>
+        <div class="o-hamburger o-hamburger--subsite js-hamburger"></div>
+        <%= require('html-loader?minimize=false!./includes/co-profile.html') %>
+        <%= require('html-loader?minimize=false!./includes/co-nav.html') %>
+    </div>
+
+    <div class="o-container o-container--customer">
+    
+        <div class="o-wrap o-wrap--content">
+            <div class="c-form">
+                <form action="#">
+                    <div class="o-wrap o-wrap--form">
+                        <header class="o-header text-center">
+                            <h1 class="o-header--fourth">Create brochure</h1>
+                            
+                            <p>Step 1 of 6</p>
+                        </header>
+                        
+                        <div class="o-croppie js-croppie">
+                            <div class="form-row form-row--baseline">
+                                
+                                <div class="form-group">
+                                    <label>Upload Background Image <sup>*</sup></label>
+                                    
+                                    <div class="o-croppie__image o-croppie__image--big">
+                                        <div class="js-image"></div>
+
+                                        <div class="o-croppie__rotate">
+                                            <i class="icon-cw js-rotate" data-deg="-90"></i>
+                                            <i class="icon-ccw js-rotate" data-deg="90"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group ">
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label>&nbsp;</label>
+                                        
+                                            <div class="o-croppie__upload">
+                                                <div class="o-upload js-upload">
+                                                    <input type="file" name="file">
+                                                    <span class="o-btn o-btn--gray o-btn--small js-btn">Choose file</span>
+                                                    <div class="o-upload__info is-hidden js-filename"></div>
+                                                </div>
+                                                
+                                                <p class="o-header--sixth">File extensions: jpg, jpeg, gif, png</p>
+                                                <p class="o-header--sixth">Maximum file size: 5MB</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label>Title <sup>*</sup></label>
+                                            <input type="text" class="form-field">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label>Subtitle <sup>*</sup></label>
+                                            <input type="text" class="form-field">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <h6 class="o-header--sixth"><sup>*</sup> Denotes a mandatory field</h6>
+                        </div>
+                        
+                        <div class="form-group text-right">
+                            <a href="co-create-brochure-03.html" class="o-btn o-btn--violet">Next</a>
+                        </div>
+                    </div>
+                </form>
+            </div>                     
+        </div>
+    </div>
+
+
+    <%= require('html-loader?minimize=false!./includes/footer.html') %>
+
+
+</body>
+</html>

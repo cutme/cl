@@ -1,0 +1,92 @@
+.c-register {
+    margin: 0 -10px;
+
+    &__content {
+        @extend %flex;
+        @extend %flex-wrap;
+    }
+    
+    .c-profileupload {
+
+        @media screen and ( min-width: $tablet_portrait + 1px ) {
+            width: 270px;
+            margin-right: 20px;
+        }
+        
+        @media screen and ( max-width: $tablet_portrait + px ) {
+            width: 100%;
+            margin: 0;
+        }
+        
+        .form-group {
+            //flex: 0 0 270px;
+
+            @media screen and ( max-width: $tablet_portrait + px ) {
+                flex: 0 0 270px;
+//                width: 270px;
+                margin: {
+                    left: auto;
+                    right: auto;
+                }
+            }
+        }
+        
+        .o-croppie {
+            margin-bottom: 15px;
+            
+            & + .form-row {
+                margin-left: -10px;
+            }
+        }
+    }
+            
+    .c-registerform {
+        width: 810px;
+        
+        @media screen and ( max-width: $base2 + px ) {
+            flex: 1;
+            width: auto;
+        }
+        
+        @media screen and ( max-width: $tablet_portrait + px ) {
+            width: 100%;
+        }
+    }
+    
+    &__content {        
+        @extend %anim;
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+
+        &.is-invisible {
+            transform: translate3d(0, 10px, 0);
+        }
+        
+
+    }
+    
+    .o-btn--addagency {
+        span {
+            pointer-events: none;
+            &:before {
+                content: '+ ';
+            }
+        }
+        
+        &.is-active {
+            span {
+                &:before {
+                    content: '- ';
+                }
+            }
+        }
+    }
+    
+    .o-header {
+        //margin-bottom: 40px;
+        
+        &--third {
+            margin-bottom: 40px;
+        }
+    }
+}

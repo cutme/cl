@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<%= require('html-loader?minimize=false!./includes/head.html') %>
+
+    <div class="c-top c-top--customer js-top">
+        <a href="index.html" class="c-logo">
+            <img src=<%= require("./img/logo-cl--black.svg") %> width="191" height="54" alt="Central Listing">
+        </a>
+
+        <%= require('html-loader?minimize=false!./includes/s-nav-customer.html') %>
+        <div class="o-hamburger o-hamburger--subsite js-hamburger"></div>
+        <%= require('html-loader?minimize=false!./includes/s-profile.html') %>
+        <%= require('html-loader?minimize=false!./includes/s-nav.html') %>
+    </div>
+
+    <div class="o-container o-container--customer">
+
+        <div class="o-wrap o-wrap--grid">
+            <div class="c-searchresults">
+                <div class="c-searchform c-searchform--agent">
+                    <div class="c-searchform__filters">
+                        <%= require('html-loader?minimize=false!./includes/filters-agent.html') %>
+                    </div>
+                </div>
+
+                <header class="o-header">
+                    <h1 class="o-header--fourth">Agent Search Results</h1>
+                    
+                    <%= require('html-loader?minimize=false!./includes/searchresults-filters.html') %>
+                </header>
+
+                <div class="o-grid o-grid--fourh">
+                    <%= require('html-loader?minimize=false!./includes/s-agent.html') %>
+                    <%= require('html-loader?minimize=false!./includes/s-agent.html') %>
+                    <%= require('html-loader?minimize=false!./includes/s-agent.html') %>
+                    <%= require('html-loader?minimize=false!./includes/s-agent.html') %>
+                    
+                    <%= require('html-loader?minimize=false!./includes/s-agent.html') %>
+                    <%= require('html-loader?minimize=false!./includes/s-agent.html') %>
+                    <%= require('html-loader?minimize=false!./includes/s-agent.html') %>
+                    <%= require('html-loader?minimize=false!./includes/s-agent.html') %>
+                    
+                    <%= require('html-loader?minimize=false!./includes/s-agent.html') %>
+                    <%= require('html-loader?minimize=false!./includes/s-agent.html') %>
+                    <%= require('html-loader?minimize=false!./includes/s-agent.html') %>
+                    <%= require('html-loader?minimize=false!./includes/s-agent.html') %>
+                </div>                
+            </div>
+            
+            <nav class="c-pagination">
+                <ul>
+                    <li class="current">
+                        <a href="s-search-agent-1.html">01</a>
+                    </li>
+                    
+                    <li>
+                        <a href="s-search-agent-1.html">02</a>
+                    </li>
+                    
+                    <li>
+                        <a href="s-search-agent-1.html">03</a>
+                    </li>
+                    
+                    <li>
+                        <a href="s-search-agent-1.html">04</a>
+                    </li>
+                    
+                    <li>
+                        <a href="s-search-agent-1.html">05</a>
+                    </li>
+                </ul>
+                
+                <a href="s-search-agent-1.html" class="o-btn o-btn--gray">Next</a>
+            </nav>
+        </div>        
+    </div>
+
+
+    <%= require('html-loader?minimize=false!./includes/footer.html') %>
+
+
+</body>
+</html>

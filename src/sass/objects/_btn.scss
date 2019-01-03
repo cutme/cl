@@ -1,0 +1,113 @@
+%btn {
+    @extend %anim;
+    @extend %rel;
+    @extend %flex-xy;
+    display: inline-flex;
+    min-width: 115px;
+    height: 50px;
+    border-radius: 25px;
+    padding: 0 20px;
+    line-height: 1.25em;
+    text: {
+        align: center;
+        transform: uppercase;
+    }
+    font: {
+        size: rem(14);
+        weight: $semibold;
+    }
+    color: white;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    
+    @media screen and ( max-width: $tablet_portrait + px ) {
+        min-width: 100px;
+        height: 40px;
+        font-size: rem(12);
+    }
+    
+}
+
+.o-btn {
+    @extend %btn;
+    @extend %ulink;
+    
+    &:before, &:after {
+        z-index: -1;
+        bottom: 0;
+        height: 100%;
+        box-shadow: rgba(#020302, .10) 0 0 38px inset;
+    } 
+    
+    &--up {
+        &:hover {
+            transition-delay: 500ms;
+            transform: translate3d(0, -2px, 0);
+        }
+    }       
+    
+    &:active {
+        transition: all 25ms linear;
+        transform: translate3d(0, 0, 0);
+
+        &:before, &:after {
+            box-shadow: rgba(#020302, .20) 0 0 38px inset;
+        }        
+    }
+    
+    &--blue {
+        background-color: $c-blue;
+        
+        &:before, &:after {
+            background-color: darken($c-blue, 5%);
+        }
+    }
+    
+    &--gray {
+        background-color: $c-gray2;
+        color: $c-gray;
+
+        &:before, &:after {
+            background-color: darken($c-gray2, 5%);
+        }
+    }
+    
+    &--small {
+        width: auto;
+        height: 30px;
+        border-radius: 2px;
+        padding: 0 20px;
+        text-transform: none;
+        font-size: rem(12);
+        font-weight: $light;
+    }
+    
+    &--white {
+        background-color: white;
+        border: 1px solid $c-gray2;
+        color: $c-gray3;
+
+        &:before, &:after {
+            background-color: darken(white, 5%);
+        }
+    }
+    
+    &--whiteviolet {
+        background-color: white;
+        border: 1px solid $c-violet;
+        color: $c-violet;
+
+        &:before, &:after {
+            background-color: darken(white, 5%);
+        }
+    }
+    
+    &--violet {
+        background-color: $c-violet;
+        
+        &:before, &:after {
+            background-color: darken($c-violet, 5%);
+        }
+    }
+}

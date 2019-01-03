@@ -1,0 +1,15 @@
+.o-section {
+    &--100 {
+        padding: {
+            top: 100px;
+            bottom: 100px;
+        }
+        
+        @media screen and ( max-width: $smartphone_portrait + px ) {
+            padding: {
+                top: 50px;
+                bottom: 50px;
+            }
+        }
+    }
+}

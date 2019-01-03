@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<%= require('html-loader?minimize=false!./includes/head.html') %>
+
+    <div class="c-top c-top--customer js-top">
+        <a href="index.html" class="c-logo">
+            <img src=<%= require("./img/logo-cl--black.svg") %> width="191" height="54" alt="Central Listing">
+        </a>
+
+        <%= require('html-loader?minimize=false!./includes/nav-customer.html') %>
+        <div class="o-hamburger o-hamburger--subsite js-hamburger"></div>
+        <%= require('html-loader?minimize=false!./includes/l-profile.html') %>
+        <%= require('html-loader?minimize=false!./includes/l-nav.html') %>
+    </div>
+
+    <div class="o-container o-container--customer">
+    
+        <div class="o-wrap o-wrap--content">
+            <div class="c-contacts">
+                <header class="o-header text-justify">
+                    <h1 class="o-header--third">Contacts</h1>
+                    
+                    <a href="#" class="o-btn o-btn--blue" data-url="inc/import-contact.html">Import Contact</a>
+                </header>
+                
+    
+                <div class="o-tabs">
+                    <ul class="o-tabs__nav o-tabs__nav--violet js-tabs">
+                        <li class="is-active">All users</li>
+                        <li>Property Owners</li>
+                        <li>Agents</li>
+                        <li>Suppliers</li>
+                    </ul>
+                    
+    
+                    <div class="o-tabs__content js-tabs-content">
+                        <div class="o-tabs__item js-tab">
+                            <div class="o-tabs__inside js-inside">
+                            
+                                <div class="o-grid o-grid--four">
+                                    <%= require('html-loader?minimize=false!./includes/contact.html') %>
+                                    <%= require('html-loader?minimize=false!./includes/contact.html') %>
+                                    <%= require('html-loader?minimize=false!./includes/contact.html') %>
+                                    <%= require('html-loader?minimize=false!./includes/contact.html') %>
+                                    
+                                    <%= require('html-loader?minimize=false!./includes/contact.html') %>
+                                    <%= require('html-loader?minimize=false!./includes/contact.html') %>
+                                    <%= require('html-loader?minimize=false!./includes/contact.html') %>
+                                    <%= require('html-loader?minimize=false!./includes/contact.html') %>
+                                    
+                                    <%= require('html-loader?minimize=false!./includes/contact.html') %>
+                                    <%= require('html-loader?minimize=false!./includes/contact.html') %>
+                                    <%= require('html-loader?minimize=false!./includes/contact.html') %>
+                                    <%= require('html-loader?minimize=false!./includes/contact.html') %>
+                                </div>
+                            
+                            </div>
+                        </div>
+                        
+                        <div class="o-tabs__item js-tab">
+                            <div class="o-tabs__inside js-inside">
+                            
+                            </div>
+                        </div>
+                        
+                        <div class="o-tabs__item js-tab">
+                            <div class="o-tabs__inside js-inside">
+                            
+                            </div>
+                        </div>
+                        
+                        <div class="o-tabs__item js-tab">
+                            <div class="o-tabs__inside js-inside">
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>            
+        </div>        
+    </div>
+
+
+    <%= require('html-loader?minimize=false!./includes/footer.html') %>
+
+
+</body>
+</html>

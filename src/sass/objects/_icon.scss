@@ -1,0 +1,25 @@
+.o-icon {
+    @extend %rel;
+    flex: 1;
+    padding: {
+        left: 20px;
+        right: 20px;
+    }
+    text-align: center;
+
+    img {
+        display: inline-block;
+        margin-bottom: 30px;
+    }
+    
+    .o-header {
+        &--fifth {
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+    }
+    
+    .o-btn {
+        width: 140px;
+    }
+}

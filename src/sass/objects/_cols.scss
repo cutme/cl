@@ -1,0 +1,8 @@
+.o-cols {
+    @extend %flex;
+    
+    @media screen and ( max-width: $tablet_portrait + px ) {
+        flex-wrap: wrap;
+    }
+    
+}

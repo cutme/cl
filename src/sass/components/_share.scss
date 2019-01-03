@@ -1,0 +1,48 @@
+.c-share {
+    @extend %flex;
+    @extend %flex-y;
+    width: 100%;
+    
+    dd {
+        white-space: nowrap;
+    }
+    
+    dt {
+        margin-right: 10px;
+        text-transform: uppercase;
+        font-weight: $bold;
+        letter-spacing: 1px;
+        color: $c-gray4;
+    }
+    
+    [class^="icon-"] {
+        display: inline-flex;
+        @extend %flex-xy;
+        width: 40px; height: 40px;
+        background-color: $c-gray5;
+        margin: 0 3px;
+        border-radius: 50%;
+        font-size: rem(15);
+        color: $c-gray6;        
+        
+        
+        &:hover {
+            background-color: darken($c-gray5, 3%);
+        }
+    }
+    
+    &--big {
+        @extend %flex-x;
+        
+        [class^="icon-"] {
+            width: 80px; height: 80px;
+            margin: 0 10px;
+            font-size: rem(32);
+            
+            @media screen and ( max-width: $smartphone_portrait + px ) {
+                width: 60px; height: 60px;
+                font-size: rem(24);
+            }
+        }
+    }
+}

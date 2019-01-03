@@ -1,0 +1,55 @@
+.glide {
+    &__arrow {
+        @extend %abs;
+        @extend %abs-y;
+        @extend %anim;
+        @extend %flex;
+        @extend %flex-xy;
+        width: 50px; height: 50px;
+        background-color: white;
+        border: 1px solid $c-gray2;
+        border-radius: 50%;
+        color: $c-gray;
+        
+        &:hover {
+            border-color: $c-gray;
+        }
+    
+        &--left {
+            left: -90px;
+            transform: translate3d(0, -50%, 0);
+            
+            @media screen and ( max-width: $desktop + px ) {
+                left: -45px;
+            }
+            
+            @media screen and ( max-width: $tablet + px ) {
+                left: -15px;
+            }
+            
+            
+            &:before {
+                display: inline-block;
+                transform: scaleX(-1);
+            }
+        }
+        
+        &--right {
+            right: -90px;
+            
+            @media screen and ( max-width: $desktop + px ) {
+                right: -45px;
+            }
+            
+            @media screen and ( max-width: $tablet + px ) {
+                right: -15px;
+            }
+        }
+    }
+    
+    &__slide {
+        .o-grid__item {
+            width: 100% !important;
+        }
+    }
+}

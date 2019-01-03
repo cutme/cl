@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<%= require('html-loader?minimize=false!./includes/head.html') %>
+
+    <div class="c-top c-top--customer js-top">
+        <a href="index.html" class="c-logo">
+            <img src=<%= require("./img/logo-cl--black.svg") %> width="191" height="54" alt="Central Listing">
+        </a>
+
+        <%= require('html-loader?minimize=false!./includes/nav-customer.html') %>
+        <div class="o-hamburger o-hamburger--subsite js-hamburger"></div>
+        <%= require('html-loader?minimize=false!./includes/co-profile.html') %>
+        <%= require('html-loader?minimize=false!./includes/co-nav.html') %>
+    </div>
+
+    <div class="o-container o-container--customer">
+    
+        <div class="o-wrap o-wrap--content">
+            <div class="c-form c-form--brochure">
+               <header class="o-header margin-bottom text-center">
+                    <h1 class="o-header--fourth">Create brochure</h1>
+                    
+                    <p>Choose your brochure type below</p>
+                </header>
+                
+
+                <div class="o-grid o-grid--four">
+                    <div class="o-grid__item">
+                        <figure class="o-icon">
+                            <img src=<%= require("./img/icons/brochure-quick.svg") %> alt="" width="57" height="58">
+                            
+                            <figcaption class="o-text">
+                                <h5 class="o-header--fifth">Quick</h5>
+                                
+                                <p>One page brochure</p>
+                            </figcaption>
+                        </figure>
+                        
+                        <a href="co-create-brochure-02.html" class="o-btn o-btn--violet o-btn--up">Choose</a>
+                    </div>
+                    
+                    <div class="o-grid__item">
+                        <figure class="o-icon">
+                            <img src=<%= require("./img/icons/brochure-quick.svg") %> alt="" width="62" height="45">
+                            
+                            <figcaption class="o-text">
+                                <h5 class="o-header--fifth">Compact</h5>
+                                
+                                <p>Two page brochure which will include cover, summary and contact</p>
+                            </figcaption>
+                        </figure>
+                        
+                        <a href="co-create-brochure-02.html" class="o-btn o-btn--violet o-btn--up">Choose</a>
+                    </div>
+                    
+                    <div class="o-grid__item">
+                        <figure class="o-icon">
+                            <img src=<%= require("./img/icons/brochure-medium.svg") %> alt="" width="62" height="50">
+                            
+                            <figcaption class="o-text">
+                                <h5 class="o-header--fifth">Medium</h5>
+                                
+                                <p>Three page brochure which will include cover, summary, description and contact</p>
+                            </figcaption>
+                        </figure>
+                        
+                        <a href="co-create-brochure-02.html" class="o-btn o-btn--violet o-btn--up">Choose</a>
+                    </div>
+                    
+                    <div class="o-grid__item">
+                        <figure class="o-icon">
+                            <img src=<%= require("./img/icons/brochure-extend.svg") %> alt="" width="62" height="55">
+                            
+                            <figcaption class="o-text">
+                                <h5 class="o-header--fifth">Extended</h5>
+                                
+                                <p>Four page brochure which will include cover, summary, description, additional photos and contact.</p>
+                            </figcaption>
+                        </figure>
+                        
+                        <a href="co-create-brochure-02.html" class="o-btn o-btn--violet o-btn--up">Choose</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <%= require('html-loader?minimize=false!./includes/footer.html') %>
+
+
+</body>
+</html>

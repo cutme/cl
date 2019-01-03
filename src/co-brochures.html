@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<%= require('html-loader?minimize=false!./includes/head.html') %>
+
+    <div class="c-top c-top--customer js-top">
+        <a href="index.html" class="c-logo">
+            <img src=<%= require("./img/logo-cl--black.svg") %> width="191" height="54" alt="Central Listing">
+        </a>
+
+        <%= require('html-loader?minimize=false!./includes/nav-customer.html') %>
+        <div class="o-hamburger o-hamburger--subsite js-hamburger"></div>
+        <%= require('html-loader?minimize=false!./includes/co-profile.html') %>
+        <%= require('html-loader?minimize=false!./includes/co-nav.html') %>
+    </div>
+
+    <div class="o-container o-container--customer">
+    
+        <div class="o-wrap o-wrap--content">
+            <div class="c-messages" id="messages">
+                <header class="o-header text-justify">
+                    <h1 class="o-header--fourth">Brochures</h1>
+                    
+                    <%= require('html-loader?minimize=false!./includes/searchresults-filters-center.html') %>
+                    
+                    <a href="co-create-brochure-01.html" class="o-btn o-btn--blue">Create Brochure</a>
+                </header>
+            
+                
+                <div class="c-messages__content c-messages__content--border">
+                    <table class="c-messages__list">
+                        
+                        <%= require('html-loader?minimize=false!./includes/co-brochures-row.html') %>
+                        <%= require('html-loader?minimize=false!./includes/co-brochures-row.html') %>
+                        <%= require('html-loader?minimize=false!./includes/co-brochures-row.html') %>
+                        <%= require('html-loader?minimize=false!./includes/co-brochures-row.html') %>
+                        <%= require('html-loader?minimize=false!./includes/co-brochures-row.html') %>
+                        <%= require('html-loader?minimize=false!./includes/co-brochures-row.html') %>
+                        <%= require('html-loader?minimize=false!./includes/co-brochures-row.html') %>
+                        <%= require('html-loader?minimize=false!./includes/co-brochures-row.html') %>
+                        <%= require('html-loader?minimize=false!./includes/co-brochures-row.html') %>
+                        <%= require('html-loader?minimize=false!./includes/co-brochures-row.html') %>
+                        <%= require('html-loader?minimize=false!./includes/co-brochures-row.html') %>
+                        <%= require('html-loader?minimize=false!./includes/co-brochures-row.html') %>
+                        
+                    </table>
+                    
+                    
+                    <nav class="c-pagination">
+                        <ul>
+                            <li class="current">
+                                <a href="co-brochures.html">01</a>
+                            </li>
+                            
+                            <li>
+                                <a href="co-brochures.html">02</a>
+                            </li>
+                            
+                            <li>
+                                <a href="co-brochures.html">03</a>
+                            </li>
+                            
+                            <li>
+                                <a href="co-brochures.html">04</a>
+                            </li>
+                            
+                            <li>
+                                <a href="co-brochures.html">05</a>
+                            </li>
+                        </ul>
+                        
+                        <a href="co-brochures.html" class="o-btn o-btn--gray">Next</a>
+                    </nav>
+                </div>
+            </div>
+        </div>        
+    </div>
+
+
+    <%= require('html-loader?minimize=false!./includes/footer.html') %>
+
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+.o-header {
+    @extend %rel;
+    margin-bottom: 40px;
+    line-height: 1.2em;
+
+    &--first {
+        font-size: rem(45);
+        
+        @media screen and ( max-width: $tablet_portrait + px ) {
+            font-size: get-vw-tablet_portrait(45);
+        }
+        
+        @media screen and ( max-width: $smartphone + px ) {
+            font-size: rem(30);
+        }
+    }
+    
+    &--second {
+        font-size: rem(40);
+        
+        @media screen and ( max-width: $tablet_portrait + px ) {
+            font-size: get-vw-tablet_portrait(40);
+        }
+        
+        @media screen and ( max-width: $smartphone + px ) {
+            font-size: rem(24);
+        }
+    }
+    
+    &--third {
+        line-height: 1.2em;
+        font: {
+            size: rem(35);
+            weight: $light;
+        }
+    }
+    
+    &--fourth {
+        line-height: 1.2em;
+        font: {
+            size: rem(30);
+            weight: $light;
+        }
+    }
+    
+    &--fifth {
+        line-height: 1.2em;
+        font: {
+            size: rem(18);
+            weight: $regular;
+        }
+        
+        @media screen and ( min-width: $smartphone + 1px ) and ( max-width: $tablet_portrait + px ) {
+            font-size: get-vw-tablet_portrait(18);
+        }
+    }
+    
+    &--sixth {
+        font: {
+            size: rem(12);
+            weight: $light;
+        }
+    }
+    
+    & > p {
+        padding-top: 40px;
+        line-height: 1.25em;
+        font-weight: $light;
+    }
+    
+    @media screen and ( max-width: $tablet + px ) {
+        flex-wrap: wrap;
+    }
+    
+    &--third,
+    &--fourth {
+        @media screen and ( max-width: $tablet + px ) {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+    
+    .o-btn {
+        @media screen and ( max-width: $tablet + px ) {
+            position: absolute;
+            right: 0; top: 0;
+        }
+    }
+}

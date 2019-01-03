@@ -1,0 +1,44 @@
+.o-grid {
+    @extend %flex;
+    @extend %flex-x;
+    @extend %flex-wrap;
+    @extend %rel;
+    
+    &__checkbox {
+        @extend %abs;
+        left: 30px; top: 20px;
+    }
+    
+    &__item {
+        @extend %rel;
+        margin-bottom: 60px;
+    }
+    
+    &--carousel {
+        margin-bottom: 60px;
+    }
+    
+    &--four {
+        .o-grid__item {
+            width: 25%;
+            
+            @media screen and ( max-width: $tablet + px ) {
+                width: 50%;
+            }
+            
+            @media screen and ( max-width: $smartphone + px ) {
+                width: 100%;
+            }
+        }
+    }
+    
+    &--three {
+        .o-grid__item {
+            width: 33.333%;
+            
+            @media screen and ( max-width: $smartphone + px ) {
+                width: 100%;
+            }
+        }
+    }
+}

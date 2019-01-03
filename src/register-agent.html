@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<%= require('html-loader?minimize=false!./includes/head.html') %>
+
+    <div class="c-top c-top--float js-top">
+        <a href="index.html" class="c-logo">
+            <img src=<%= require("./img/logo-cl--black.svg") %> width="191" height="54" alt="Central Listing">
+        </a>
+        
+        <%= require('html-loader?minimize=false!./includes/nav-primary.html') %>
+        <div class="o-hamburger o-hamburger--subsite js-hamburger"></div>
+        <%= require('html-loader?minimize=false!./includes/top-buttons.html') %>
+    </div>
+
+    <div class="o-container o-container--float">
+    
+        <div class="o-wrap o-wrap--content">
+        
+        <form action="#" class="js-validate" novalidate>
+
+            <div class="c-register">
+                <header class="o-header text-center">
+                    <h1 class="o-header--third">Register as agent</h1>
+                    
+                    <p>Enter your details below</p>
+                </header>
+            
+                <%= require('html-loader?minimize=false!./includes/register-content.html') %>
+            </div>
+            
+            <%= require('html-loader?minimize=false!./includes/register-content2.html') %>
+
+        </form>
+
+        </div>        
+    </div>
+
+
+    <%= require('html-loader?minimize=false!./includes/footer.html') %>
+
+
+</body>
+</html>

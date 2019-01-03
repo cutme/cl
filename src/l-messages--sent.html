@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<%= require('html-loader?minimize=false!./includes/head.html') %>
+
+    <div class="c-top c-top--customer js-top">
+        <a href="index.html" class="c-logo">
+            <img src=<%= require("./img/logo-cl--black.svg") %> width="191" height="54" alt="Central Listing">
+        </a>
+
+        <%= require('html-loader?minimize=false!./includes/nav-customer.html') %>
+        <div class="o-hamburger o-hamburger--subsite js-hamburger"></div>
+        <%= require('html-loader?minimize=false!./includes/l-profile.html') %>
+        <%= require('html-loader?minimize=false!./includes/l-nav.html') %>
+    </div>
+
+    <div class="o-container o-container--customer">
+    
+        <div class="o-wrap o-wrap--content">
+            <div class="c-messages" id="messages">
+                <header class="o-header text-justify">
+                    <h1 class="o-header--third">Messages</h1>
+                    
+                    <div class="o-tabs">
+                        <ul class="o-tabs__nav o-tabs__nav--gray">
+                            <li>
+                                <a href="l-messages--inbox.html">Inbox</a>
+                            </li>
+                            
+                            <li class="is-active">
+                                <a href="l-messages--sent.html">Sent Items</a>
+                            </li>
+                            
+                            <li>
+                                <a href="l-messages--deleted.html">Deleted items</a>
+                            </li>
+                            
+                            <li>
+                                <a href="l-messages--archive.html">Archive</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <a href="#" class="o-btn o-btn--blue" data-url="inc/create-message.html">Create message</a>
+                </header>
+            
+                
+                <div class="c-messages__content c-messages__content--border">
+                    
+                    <%= require('html-loader?minimize=false!./includes/l-messages2.html') %>
+
+                </div>
+            </div>            
+        </div>
+    </div>
+
+
+    <%= require('html-loader?minimize=false!./includes/footer.html') %>
+
+
+</body>
+</html>

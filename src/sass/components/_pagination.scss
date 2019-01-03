@@ -1,0 +1,58 @@
+.c-pagination {
+    @extend %rel;
+    
+    @media screen and ( max-width: $tablet_portrait + px ) {
+        text-align: center;
+    }
+
+    ul {
+        @extend %flex;
+        @extend %flex-x;
+        
+        @media screen and ( max-width: $tablet_portrait + px ) {
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin: 0 5px;
+            
+            @media screen and ( max-width: $tablet_portrait + px ) {
+                margin: 0 5px 5px 5px;
+            }
+            
+            a {
+                @extend %flex;
+                @extend %flex-x;
+                @extend %flex-xy;
+                width: 50px; height: 50px;
+                border-radius: 50%;
+                border: 1px solid $c-gray2;
+                font-weight: $semibold;
+                color: $c-gray3;
+                
+                &:hover {
+                    border-color: $c-gray3;
+                }
+            }
+            
+            &.current {
+                a {
+                    background-color: $c-violet;
+                    border-color: $c-violet;
+                    color: white;
+                }
+            }
+        }
+    }
+    
+    .o-btn {
+        
+        @media screen and ( min-width: $tablet_portrait + 1px ) {
+            position: absolute;
+            top: 50%; 
+            transform: translateY(-50%);
+            right: 0;
+        }
+        
+    }
+}

@@ -1,0 +1,28 @@
+/*
+.anim {
+    @extend %anim;
+    transition-duration: 2s;
+    
+    &--fadein {
+        opacity: 0;
+        transform: translate3d(0, 10%, 0);
+        
+        &.anim--visible {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+    
+    &--scaleleft {
+        transform: scale3d(0,1,1);
+        transform-origin: left;
+        
+        &.anim--visible {
+            transform: scale3d(1,1,1);
+        }
+    }
+    
+    
+    
+}
+*/

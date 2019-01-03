@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<%= require('html-loader?minimize=false!./includes/head.html') %>
+
+    <div class="c-top c-top--home js-top">
+        <a href="index.html" class="c-logo">
+            <img src=<%= require("./img/logo-cl.svg") %> width="191" height="54" alt="Central Listing">
+        </a>
+        
+        <%= require('html-loader?minimize=false!./includes/nav-primary.html') %>
+        <div class="o-hamburger js-hamburger"></div>
+        <%= require('html-loader?minimize=false!./includes/top-buttons.html') %>
+    </div>
+
+    <div class="o-container">
+        <div class="c-hero">
+            <div class="o-wrap o-wrap--full">
+                <div class="c-searchform js-searchforms">
+                    <p class="o-header o-header--second">Flexible and scalable</p>
+                    <p class="o-header o-header--first">Technology for People in Property</p>
+                    
+                    <ul class="c-searchform__checkboxes js-checkboxes">
+                        <li>
+                            <input type="radio" name="subject" class="form-radio form-radio--oval js-checkbox" id="agent">
+                            <label for="agent">
+                                <i></i>
+                                <span>Agent</span>
+                            </label>
+                        </li>
+                        
+                        <li>
+                            <input type="radio" checked name="subject" class="form-radio form-radio--oval js-checkbox" id="property">
+                            <label for="property">
+                                <i></i>
+                                <span>Property</span>
+                            </label>
+                        </li>
+                        
+                        <li>
+                            <input type="radio" name="subject" class="form-radio form-radio--oval js-checkbox" id="supplier">
+                            <label for="supplier">
+                                <i></i>
+                                <span>Supplier</span>
+                            </label>
+                        </li>
+                    </ul>
+                    
+                    <ul class="c-searchform__filters js-filters">
+                        <li class="c-searchform__item js-searchform">
+                            <%= require('html-loader?minimize=false!./includes/filters-agent.html') %>
+                        </li>
+                        
+                        <li class="c-searchform__item js-searchform">
+                            <%= require('html-loader?minimize=false!./includes/filters-property.html') %>
+                        </li>
+                        
+                        <li class="c-searchform__item js-searchform">
+                            <%= require('html-loader?minimize=false!./includes/filters-supplier.html') %>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="o-wrap o-wrap--content">
+            <div class="c-home">
+                <div class="o-tabs">
+                    <ul class="o-tabs__nav js-tabs">
+                        <li>Property owners</li>
+                        <li class="is-active">Agents</li>
+                        <li>Suppliers</li>
+                        <li>Looking for property</li>
+                    </ul>
+    
+                    <div class="o-tabs__content js-tabs-content">
+                        <div class="o-tabs__item js-tab">
+                            <div class="o-tabs__inside js-inside">
+                                
+                                <div class="c-article">
+                                    <article class="o-text text-center">
+        
+                                        <h3 class="o-header--third">Property owners</h3>
+                                        
+                                        <p>
+                        Morbi et dui in velit consequat consectetur id vitae neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> 
+                        Sed luctus efficitur neque sit amet tincidunt. Ut sed posuere tellus, eu auctor ante.<br> 
+                        Proin laoreet sit amet nisl eget ullamcorper.
+                                        </p>
+                                    </article>
+                                </div>
+    
+    
+                                <div class="o-grid o-grid--three">
+                                    <div class="o-grid__item">
+                                        <figure class="o-icon">
+                                            <div class="o-icon__img">
+                                                <img src=<%= require("./img/icons/property-details.svg") %> width="64" height="59" alt="">
+                                            </div>
+                                            
+                                            <figcaption class="o-text">
+                                                <h5 class="o-header--fifth">Add property details</h5>
+                                                
+                                                <a href="#" class="o-btn o-btn--up o-btn--violet" data-url="inc/signin.html">Create</a>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    
+                                    <div class="o-grid__item">
+                                        <figure class="o-icon">
+                                            <div class="o-icon__img">
+                                                <img src=<%= require("./img/icons/property-valuations.svg") %> width="64" height="57" alt="">
+                                            </div>
+    
+                                            <figcaption class="o-text">
+                                                <h5 class="o-header--fifth">Free Property valuations</h5>
+                                                
+                                                <a href="#" class="o-btn o-btn--up o-btn--violet" data-url="inc/signin.html">Create</a>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    
+                                    <div class="o-grid__item">
+                                        <figure class="o-icon">
+                                            <div class="o-icon__img">
+                                                <img src=<%= require("./img/icons/brochure.svg") %> width="57" height="58" alt="">
+                                            </div>
+    
+                                            <figcaption class="o-text">
+                                                <h5 class="o-header--fifth">Create a brochure</h5>
+                                                
+                                                <a href="#" class="o-btn o-btn--up o-btn--violet" data-url="inc/signin.html">Create</a>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="o-tabs__item js-tab">
+                            <div class="o-tabs__inside js-inside">
+       
+                                <div class="c-article">
+                                    <article class="o-text text-center">
+    
+                                    <h3 class="o-header--third">Agents</h3>
+                                    
+                                    <p>
+                    Morbi et dui in velit consequat consectetur id vitae neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> 
+                    Sed luctus efficitur neque sit amet tincidunt. Ut sed posuere tellus, eu auctor ante.<br> 
+                    Proin laoreet sit amet nisl eget ullamcorper.
+                                    </p>
+    
+                                    </article>
+                                </div>
+                                
+                                <div class="o-grid o-grid--three">
+                                    <div class="o-grid__item">
+                                        <figure class="o-icon">
+                                            <div class="o-icon__img">
+                                                <img src=<%= require("./img/icons/brochure.svg") %> width="57" height="58" alt="">
+                                            </div>
+    
+                                            <figcaption class="o-text">
+                                                <h5 class="o-header--fifth">Create a brochure</h5>
+                                                
+                                                <a href="#" class="o-btn o-btn--up o-btn--violet" data-url="inc/signin.html">Create</a>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    
+                                    <div class="o-grid__item">
+                                        <figure class="o-icon">
+                                            <div class="o-icon__img">
+                                                <img src=<%= require("./img/icons/property.svg") %> width="60" height="60" alt="">
+                                            </div>
+    
+                                            <figcaption class="o-text">
+                                                <h5 class="o-header--fifth">Add a property</h5>
+                                                
+                                                <a href="#" class="o-btn o-btn--up o-btn--violet" data-url="inc/signin.html">Create</a>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    
+                                    <div class="o-grid__item">
+                                        <figure class="o-icon">
+                                            <div class="o-icon__img">
+                                                <img src=<%= require("./img/icons/social.svg") %> width="52" height="60" alt="">
+                                            </div>
+    
+                                            <figcaption class="o-text">
+                                                <h5 class="o-header--fifth">Grow social media presence</h5>
+                                                
+                                                <a href="#" class="o-btn o-btn--up o-btn--violet" data-url="inc/signin.html">Create</a>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="o-tabs__item js-tab">
+                            <div class="o-tabs__inside js-inside">
+    
+                                <div class="c-article">
+                                    <article class="o-text text-center">
+    
+                                        <h3 class="o-header--third">Suppliers</h3>
+                                        
+                                        <p>
+                        Morbi et dui in velit consequat consectetur id vitae neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> 
+                        Sed luctus efficitur neque sit amet tincidunt. Ut sed posuere tellus, eu auctor ante.<br> 
+                        Proin laoreet sit amet nisl eget ullamcorper.
+                                        </p>
+                                    </article>
+                                </div>
+    
+                                <div class="o-grid o-grid--three">
+                                    <div class="o-grid__item">
+                                        <figure class="o-icon">
+                                            <div class="o-icon__img">
+                                                <img src=<%= require("./img/icons/speaker.png") %> width="62" height="61" alt="">
+                                            </div>
+    
+                                            <figcaption class="o-text">
+                                                <h5 class="o-header--fifth">Promote your services to landlord &amp; agents</h5>
+                                                
+                                                <a href="#" class="o-btn o-btn--up o-btn--violet" data-url="inc/signin.html">Create</a>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    
+                                    <div class="o-grid__item">
+                                        <figure class="o-icon">
+                                            <div class="o-icon__img">
+                                                <img src=<%= require("./img/icons/money.svg") %> width="64" height="57" alt="">
+                                            </div>
+    
+                                            <figcaption class="o-text">
+                                                <h5 class="o-header--fifth">Manage your client interaction</h5>
+                                                
+                                                <a href="#" class="o-btn o-btn--up o-btn--violet" data-url="inc/signin.html">Create</a>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    
+                                    <div class="o-grid__item">
+                                        <figure class="o-icon">
+                                            <div class="o-icon__img">
+                                                <img src=<%= require("./img/icons/cooperate.png") %> width="57" height="60" alt="">
+                                            </div>
+    
+                                            <figcaption class="o-text">
+                                                <h5 class="o-header--fifth">Cooperate with other suppliers in your area</h5>
+                                                
+                                                <a href="#" class="o-btn o-btn--up o-btn--violet" data-url="inc/signin.html">Create</a>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="o-tabs__item js-tab">
+                            <div class="o-tabs__inside js-inside">
+                                
+                                <div class="c-article">
+                                    <article class="o-text text-center">
+    
+                                        <h3 class="o-header--third">Looking for property</h3>
+                                        
+                                        <p>
+                        Morbi et dui in velit consequat consectetur id vitae neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> 
+                        Sed luctus efficitur neque sit amet tincidunt. Ut sed posuere tellus, eu auctor ante.<br> 
+                        Proin laoreet sit amet nisl eget ullamcorper.
+                                        </p>
+                                    </article>
+                                </div>
+                                
+                                
+                                <div class="o-grid o-grid--three">
+                                    <div class="o-grid__item">
+                                        <figure class="o-icon">
+                                            <figcaption class="o-text">
+                                                <div class="o-icon__img">
+                                                    <img src=<%= require("./img/icons/map.png") %> width="65" height="57" alt="">
+                                                </div>
+                                                
+                                                <h5 class="o-header--fifth">Search properties</h5>
+                                                
+                                                <a href="#" class="o-btn o-btn--up o-btn--violet" data-url="inc/signin.html">Search</a>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    
+                                    <div class="o-grid__item">
+                                        <figure class="o-icon">                                        
+                                            <figcaption class="o-text">
+                                                <div class="o-icon__img">
+                                                    <img src=<%= require("./img/icons/agents.png") %> width="53" height="61" alt="">
+                                                </div>
+                                                
+                                                <h5 class="o-header--fifth">Find agents</h5>
+                                                
+                                                <a href="#" class="o-btn o-btn--up o-btn--violet" data-url="inc/signin.html">Search</a>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    
+                                    <div class="o-grid__item">
+                                        <figure class="o-icon">                                        
+                                            <figcaption class="o-text">
+                                                <div class="o-icon__img">
+                                                    <img src=<%= require("./img/icons/stats.png") %> width="63" height="59" alt="">
+                                                </div>
+                                                
+                                                <h5 class="o-header--fifth">Get expert advice / ask an expert</h5>
+                                                
+                                                <a href="#" class="o-btn o-btn--up o-btn--violet" data-url="inc/signin.html">Create</a>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <%= require('html-loader?minimize=false!./includes/footer.html') %>
+    
+
+
+</body>
+</html>

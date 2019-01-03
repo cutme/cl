@@ -1,0 +1,43 @@
+.c-hero {
+    @extend %rel;
+    height: 610px;
+    background: {
+        image: url('../img/bg/dashboard.jpg');
+        position: center;
+        size: cover;
+    }
+    margin-bottom: -50px;
+    padding: 40px 0;
+    
+    @media screen and ( max-width: $smartphone + px ) {
+        height: auto;
+        min-height: 610px;
+    }
+    
+    
+    .c-searchform {
+        color: white;
+        
+        .form-field {
+            border: none;
+            border-radius: 0;
+            
+            @media screen and ( max-width: $smartphone + px ) {
+                border-radius: 20px;
+            }
+        }
+    }
+
+    .o-wrap {
+        @extend %flex;
+        @extend %flex-x;
+        @extend %flex-column;
+        height: 100%;
+        text-align: center;
+        
+         @media screen and ( max-width: $smartphone + px ) {
+            justify-content: flex-start;
+            padding-top: 90px;
+        }
+    }
+}

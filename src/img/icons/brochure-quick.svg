@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Warstwa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 57 58" style="enable-background:new 0 0 57 58;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#E9EAEB;}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:none;stroke:#363B42;stroke-width:2;stroke-miterlimit:10;}
+	.st3{fill:#FFFFFF;stroke:#2A5082;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#2A5082;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<g>
+	<circle class="st0" cx="22.5" cy="22.5" r="22.5"/>
+	<path class="st1" d="M24,12h24l8,8v35c0,1.1-0.9,2-2,2H24c-1.1,0-2-0.9-2-2V14C22,12.9,22.9,12,24,12z"/>
+	<path class="st2" d="M22,14c0-1.1,0.9-2,2-2h24l8,8v35c0,1.1-0.9,2-2,2H24c-1.1,0-2-0.9-2-2V14z"/>
+	<g>
+		<polyline class="st2" points="53,21 47,21 47,15 		"/>
+	</g>
+	<g>
+		<path class="st3" d="M33,48"/>
+		<path class="st3" d="M37,44"/>
+		<path class="st4" d="M7,28"/>
+		<path class="st4" d="M14,21"/>
+		<path class="st4" d="M14,35"/>
+		<path class="st4" d="M4,25"/>
+	</g>
+</g>
+</svg>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<%= require('html-loader?minimize=false!./includes/head.html') %>
+
+    <div class="c-top c-top--customer js-top">
+        <a href="index.html" class="c-logo">
+            <img src=<%= require("./img/logo-cl--black.svg") %> width="191" height="54" alt="Central Listing">
+        </a>
+
+        <%= require('html-loader?minimize=false!./includes/nav-customer.html') %>
+        <div class="o-hamburger o-hamburger--subsite js-hamburger"></div>
+        <%= require('html-loader?minimize=false!./includes/l-profile.html') %>
+        <%= require('html-loader?minimize=false!./includes/l-nav.html') %>
+    </div>
+
+    <div class="o-container o-container--customer">
+    
+        <div class="o-wrap o-wrap--content">
+            <div class="c-messages">
+                <div class="c-list">
+                    <header class="o-header">
+                        <h1 class="o-header--fourth">Saved Agents List</h1>
+                        
+                        <%= require('html-loader?minimize=false!./includes/searchresults-filters.html') %>
+                    </header>
+            
+                    <div class="c-messages__content c-messages__content--border">
+                        <table class="c-messages__list js-list">
+                            
+                            <%= require('html-loader?minimize=false!./includes/saved-agents-row--lawrence.html') %>
+                            <%= require('html-loader?minimize=false!./includes/saved-agents-row--lawrence.html') %>
+                            <%= require('html-loader?minimize=false!./includes/saved-agents-row--lawrence.html') %>
+                            
+                        </table>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </div>
+
+
+    <%= require('html-loader?minimize=false!./includes/footer.html') %>
+
+
+</body>
+</html>

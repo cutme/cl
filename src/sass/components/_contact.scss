@@ -1,0 +1,114 @@
+.c-contact {
+    @extend %flex;
+    @extend %flex-wrap;
+    max-width: 1080px;
+    
+    &__col {
+        width: 50%;
+        
+        @media screen and ( max-width: $tablet_portrait + px ) {
+            width: 100%;
+        }
+        
+        
+        &--map {
+            background-color: $c-black;
+            
+            .o-text {
+                p {
+                    color: white;
+                }
+            }
+        }
+    }
+    
+    &__form {
+        @extend %rel;
+        padding: 60px;
+        
+        @media screen and ( max-width: $tablet + px ) {
+            padding: 60px 20px;
+        }
+        
+        @media screen and ( max-width: $tablet_portrait + px ) {
+            padding: 20px;
+        }
+
+        .custom-select-container {
+
+            @media screen and ( min-width: $smartphone + 1px ) {
+                width: 90px;
+            }            
+        } 
+        
+        textarea {
+            &.form-field {
+                height: 120px;
+            }
+        }
+        
+        .thanks {
+            display: none;
+        }
+        
+        &.is-done {
+            
+            .fields {
+                visibility: hidden;
+            
+                &.header,
+                &.submit {
+                    display: none;
+                }
+            }
+            
+            .thanks {
+                display: block;
+            }
+            
+        }
+    }
+
+    .o-text {
+        padding: 50px;
+        
+        @media screen and ( min-width: $tablet_portrait + 1px ) {
+            height: 50%;
+        }
+
+        a {
+            @extend %ulink;
+            
+            &:before, &:after {
+                background-color: white;
+            }
+        }        
+        
+        .o-header {
+            &--fourth,
+            &--fifth {
+                color: $c-gray;
+            }
+            
+            &--fourth {
+                margin-bottom: .5em;
+            }
+
+            &--fifth {
+                text-transform: uppercase;
+            }
+        }
+        
+        address {
+            margin-bottom: 20px;
+        }
+    }
+    
+    &__thanks {
+        @extend %abs;
+        @extend %abs-xy;
+    }
+}
+
+
+

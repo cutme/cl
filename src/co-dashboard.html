@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<%= require('html-loader?minimize=false!./includes/head.html') %>
+
+    <div class="c-top c-top--customer js-top">
+        <a href="index.html" class="c-logo">
+            <img src=<%= require("./img/logo-cl--black.svg") %> width="191" height="54" alt="Central Listing">
+        </a>
+
+        <%= require('html-loader?minimize=false!./includes/nav-customer.html') %>
+        <div class="o-hamburger o-hamburger--subsite js-hamburger"></div>
+        <%= require('html-loader?minimize=false!./includes/co-profile.html') %>
+        <%= require('html-loader?minimize=false!./includes/co-nav.html') %>
+    </div>
+
+    <div class="o-container o-container--customer">
+    
+        <div class="o-wrap o-wrap--content">
+            <div class="c-searchresults c-searchresults--dashboard">
+                <header class="o-header text-justify">
+                    <h2 class="o-header--fourth">Saved Properties</h2>
+                    
+                    <a href="co-saved-properties.html" class="o-btn o-btn--blue">See more</a>
+                </header>
+                
+                <div class="o-grid o-grid--three o-grid--carousel js-dashslide" data-row="3">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            <li class="glide__slide">
+                                <%= require('html-loader?minimize=false!./includes/co-property.html') %>
+                            </li>
+
+                            <li class="glide__slide">
+                                <%= require('html-loader?minimize=false!./includes/co-property.html') %>
+                            </li>
+                    
+                            <li class="glide__slide">
+                                <%= require('html-loader?minimize=false!./includes/co-property.html') %>
+                            </li>
+                        </ul>
+
+                        <div class="glide__arrows" data-glide-el="controls">
+                            <button class="icon-arrow glide__arrow glide__arrow--left" data-glide-dir="<"></button>
+                            <button class="icon-arrow glide__arrow glide__arrow--right" data-glide-dir=">"></button>
+                        </div>
+                    </div>
+                </div>
+                
+              
+                <header class="o-header text-justify">
+                    <h2 class="o-header--fourth">Saved Agents</h2>
+                    
+                    <a href="co-saved-agents.html" class="o-btn o-btn--blue">See more</a>
+                </header>
+                
+                <div class="o-grid o-grid--four o-grid--carousel js-dashslide" data-row="4">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            <li class="glide__slide">
+                                <%= require('html-loader?minimize=false!./includes/co-agent.html') %>
+                            </li>    
+                            
+                            <li class="glide__slide">
+                                <%= require('html-loader?minimize=false!./includes/co-agent.html') %>
+                            </li>
+                            
+                            <li class="glide__slide">
+                                <%= require('html-loader?minimize=false!./includes/co-agent.html') %>
+                            </li>
+                            
+                            <li class="glide__slide">
+                                <%= require('html-loader?minimize=false!./includes/co-agent.html') %>
+                            </li>
+                        </ul>
+                        
+                        <div class="glide__arrows" data-glide-el="controls">
+                            <button class="icon-arrow glide__arrow glide__arrow--left" data-glide-dir="<"></button>
+                            <button class="icon-arrow glide__arrow glide__arrow--right" data-glide-dir=">"></button>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <header class="o-header text-justify">
+                    <h2 class="o-header--fourth">Saved Suppliers</h2>
+                    
+                    <a href="co-saved-suppliers.html" class="o-btn o-btn--blue">See more</a>
+                </header>
+                
+                <div class="o-grid o-grid--four o-grid--carousel js-dashslide" data-row="4">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            <li class="glide__slide">
+                                <%= require('html-loader?minimize=false!./includes/co-supplier.html') %>
+                            </li>
+                            
+                            <li class="glide__slide">
+                                <%= require('html-loader?minimize=false!./includes/co-supplier.html') %>
+                            </li>
+                            
+                            <li class="glide__slide">
+                                <%= require('html-loader?minimize=false!./includes/co-supplier.html') %>
+                            </li>
+                            
+                            <li class="glide__slide">
+                                <%= require('html-loader?minimize=false!./includes/co-supplier.html') %>
+                            </li>
+                        </ul>
+                        
+                        <div class="glide__arrows" data-glide-el="controls">
+                            <button class="icon-arrow glide__arrow glide__arrow--left" data-glide-dir="<"></button>
+                            <button class="icon-arrow glide__arrow glide__arrow--right" data-glide-dir=">"></button>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="c-contacts">
+                    <div class="o-tabs">
+                        <header class="o-header text-justify">
+                            <h2 class="o-header--fourth">Contacts</h2>
+                            
+                            <ul class="o-tabs__nav o-tabs__nav--gray js-tabs">
+                                <li class="is-active">All</li>
+                                <li>Property Owners</li>
+                                <li>Agents</li>
+                                <li>Suppliers</li>
+                            </ul>
+                            
+                            <a href="#" class="o-btn o-btn--blue">See more</a>
+                        </header>
+        
+                        <div class="o-tabs__content js-tabs-content">
+                            <div class="o-tabs__item js-tab">
+                                <div class="o-tabs__inside js-inside">
+                                
+                                    <div class="o-grid o-grid--four o-grid--carousel js-dashslide" data-row="4">
+                                        <div class="glide__track" data-glide-el="track">
+                                            <ul class="glide__slides">
+                                                <li class="glide__slide">
+                                                    <%= require('html-loader?minimize=false!./includes/contact.html') %>
+                                                </li>
+                                        
+                                                <li class="glide__slide">
+                                                    <%= require('html-loader?minimize=false!./includes/contact.html') %>
+                                                </li>
+                                                
+                                                <li class="glide__slide">
+                                                    <%= require('html-loader?minimize=false!./includes/contact.html') %>
+                                                </li>
+                                                
+                                                <li class="glide__slide">
+                                                    <%= require('html-loader?minimize=false!./includes/contact.html') %>
+                                                </li>
+                                            </ul>
+                                            
+                                            <div class="glide__arrows" data-glide-el="controls">
+                                                <button class="icon-arrow glide__arrow glide__arrow--left" data-glide-dir="<"></button>
+                                                <button class="icon-arrow glide__arrow glide__arrow--right" data-glide-dir=">"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                            </div>
+                            
+                            <div class="o-tabs__item js-tab">
+                                <div class="o-tabs__inside js-inside">
+                                
+                                    <div class="o-grid o-grid--four o-grid--carousel js-dashslide" data-row="4">
+                                        <div class="glide__track" data-glide-el="track">
+                                            <ul class="glide__slides">
+                                                <li class="glide__slide">
+                                                    <%= require('html-loader?minimize=false!./includes/contact.html') %>
+                                                </li>
+                                        
+                                                <li class="glide__slide">
+                                                    <%= require('html-loader?minimize=false!./includes/contact.html') %>
+                                                </li>
+                                                
+                                                <li class="glide__slide">
+                                                    <%= require('html-loader?minimize=false!./includes/contact.html') %>
+                                                </li>
+                                                
+                                                <li class="glide__slide">
+                                                    <%= require('html-loader?minimize=false!./includes/contact.html') %>
+                                                </li>
+                                            </ul>
+                                            
+                                            <div class="glide__arrows" data-glide-el="controls">
+                                                <button class="icon-arrow glide__arrow glide__arrow--left" data-glide-dir="<"></button>
+                                                <button class="icon-arrow glide__arrow glide__arrow--right" data-glide-dir=">"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                            </div>
+                            
+                            <div class="o-tabs__item js-tab">
+                                <div class="o-tabs__inside js-inside">
+                                
+                                    <div class="o-grid o-grid--four o-grid--carousel js-dashslide" data-row="4">
+                                        <div class="glide__track" data-glide-el="track">
+                                            <ul class="glide__slides">
+                                                <li class="glide__slide">
+                                                    <%= require('html-loader?minimize=false!./includes/contact.html') %>
+                                                </li>
+                                        
+                                                <li class="glide__slide">
+                                                    <%= require('html-loader?minimize=false!./includes/contact.html') %>
+                                                </li>
+                                                
+                                                <li class="glide__slide">
+                                                    <%= require('html-loader?minimize=false!./includes/contact.html') %>
+                                                </li>
+                                                
+                                                <li class="glide__slide">
+                                                    <%= require('html-loader?minimize=false!./includes/contact.html') %>
+                                                </li>
+                                            </ul>
+                                            
+                                            <div class="glide__arrows" data-glide-el="controls">
+                                                <button class="icon-arrow glide__arrow glide__arrow--left" data-glide-dir="<"></button>
+                                                <button class="icon-arrow glide__arrow glide__arrow--right" data-glide-dir=">"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                            </div>
+                            
+                            <div class="o-tabs__item js-tab">
+                                <div class="o-tabs__inside js-inside">
+                                
+                                    <div class="o-grid o-grid--four o-grid--carousel js-dashslide" data-row="4">
+                                        <div class="glide__track" data-glide-el="track">
+                                            <ul class="glide__slides">
+                                                <li class="glide__slide">
+                                                    <%= require('html-loader?minimize=false!./includes/contact.html') %>
+                                                </li>
+                                        
+                                                <li class="glide__slide">
+                                                    <%= require('html-loader?minimize=false!./includes/contact.html') %>
+                                                </li>
+                                                
+                                                <li class="glide__slide">
+                                                    <%= require('html-loader?minimize=false!./includes/contact.html') %>
+                                                </li>
+                                                
+                                                <li class="glide__slide">
+                                                    <%= require('html-loader?minimize=false!./includes/contact.html') %>
+                                                </li>
+                                            </ul>
+                                            
+                                            <div class="glide__arrows" data-glide-el="controls">
+                                                <button class="icon-arrow glide__arrow glide__arrow--left" data-glide-dir="<"></button>
+                                                <button class="icon-arrow glide__arrow glide__arrow--right" data-glide-dir=">"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="c-messages">
+                    <header class="o-header text-justify">
+                        <h2 class="o-header--fourth">New Messages</h2>
+                        
+                        <a href="co-messages--inbox.html" class="o-btn o-btn--blue">See more</a>
+                    </header>
+                    
+                    <div class="c-messages__content">
+                        <table class="c-messages__list js-list">
+                            <tr class="js-post" data-url="co-messages--post.html">
+                                <td class="avatar oval">
+                                    <img src=<%= require("./img/assets/profile-swift--small.jpg") %> alt="Gabriel Swift" width="30" height="30">
+                                </td>
+                                
+                                <td class="username">Gabriel Swift</td>
+                                
+                                <td class="status">
+                                    <span>new</span>
+                                </td>
+                                
+                                <td class="content">
+                                    <span class="subject">Lorem ipsum dolor sit amet</span>
+                                    <span class="excerpt">Curabitur feugiat mauris vitae tortor tincidunt, ac egestas...</span>
+                                </td>
+                                
+                                <td class="date">
+                                    <span class="hour">11:55 am</span>
+                                    <span class="days">08/09/17</span>
+                                </td>
+                            </tr>
+                            
+                            <tr class="js-post" data-url="co-messages--post.html">
+                                <td class="avatar oval">
+                                    <img src=<%= require("./img/assets/profile-dunn--small.jpg") %> alt="Holly Dunn" width="30" height="30">
+                                </td>
+                                
+                                <td class="username">Holly Dunn</td>
+                                
+                                <td class="status">
+                                    <span>new</span>
+                                </td>
+                                
+                                <td class="content">
+                                    <span class="subject">Integer ullamcorper</span>
+                                    <span class="excerpt">lacus sapien ultrices augue, vel rutrum quam lorem vitae nulla. aliqu... </span>
+                                </td>
+                                
+                                <td class="date">
+                                    <span class="hour">11:55 am</span>
+                                    <span class="days">08/09/17</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                
+            </div>
+        </div>        
+    </div>
+
+
+    <%= require('html-loader?minimize=false!./includes/footer.html') %>
+
+
+</body>
+</html>

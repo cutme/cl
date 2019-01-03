@@ -1,0 +1,80 @@
+.o-croppie {
+    width: 100%;
+
+    &__image {
+        @extend %rel;
+        width: 100%; height: 253px;
+        margin-bottom: 50px;
+        border: 1px dotted $c-gray2;
+        
+        img {
+            width: 100%;
+        }
+        
+        &--big {
+            height: 380px;
+        }
+    }
+    
+    &__rotate {
+        @extend %flex;
+        @extend %abs;
+        left: 0; bottom: -37px;
+        width: 50px;
+        
+        i {
+            font-size: rem(22);
+            cursor: pointer;
+            color: $c-gray8;
+            
+            &.icon-cw {
+                margin-right: 4px;
+            }
+        }
+    }
+    
+    &__upload {
+        width: 100%;
+    }
+    
+    .croppie-container {
+        background: {
+            image: url(../img/icons/picture3.svg);
+            position: center;
+            repeat: no-repeat;
+            size: 76px 76px;
+        }
+
+        .cr-viewport {
+            box-shadow:0 0 0 899px rgba(255,255,255, 0.5);
+            border: none;
+        }
+        
+        .cr-slider-wrap {
+            flex: 1;
+            width: auto;
+            margin: 15px 0 15px 50px;
+        }
+    }
+    
+    .o-btn--small {
+        min-width: 0;
+        padding: 0 20px 0 10px;
+    }
+    
+    .o-upload {
+        margin-bottom: 12px;
+    }
+    
+    p {
+        margin-bottom: 4px;
+    }
+    
+    
+    
+/*
+    .cropper-crop-box {
+      background-color: white;
+    }
+*/
+}
